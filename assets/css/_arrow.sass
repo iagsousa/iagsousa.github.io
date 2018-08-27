@@ -1,0 +1,29 @@
+.arrow
+	margin: 30px 0
+	flex-direction: column
+	background: transparent
+	border: 3px solid $dkColor
+	border-radius: 50%
+	width: 35px
+	height: 35px
+	cursor: pointer
+	transition: background-color 300ms
+	outline: none
+
+	div
+		width: 15px
+		height: 15px
+		position: relative
+		top: 40%
+		left: 50%
+		transform: translate(-50%, -50%) rotate(45deg)
+		border-right: 2px solid $dkColor
+		border-bottom: 2px solid $dkColor
+		border-radius: 0
+		transition: border-color 300ms
+
+	&:hover
+		background-color: $dkColor
+
+		div
+			border-color: $bgColor
